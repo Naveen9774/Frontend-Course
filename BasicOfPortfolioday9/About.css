@@ -1,0 +1,36 @@
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    border: 2px;
+}
+a{
+    text-decoration: none;
+    color: rgb(12, 11, 11);
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 30px;
+    margin-right: 40px;
+    float: right;
+}
+body{
+    background-color:  rgb(159, 159, 243);
+}
+li{
+    list-style-type: none;
+}
+h1{
+    text-align: center;
+
+}
+h3{
+    text-align: center;
+}
+pre{
+    text-align: justify;
+}
+
+
+

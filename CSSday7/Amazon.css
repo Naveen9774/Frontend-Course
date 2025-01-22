@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+#navbar{
+    background-color: black;
+    height: 60px;
+
+}
+a{
+    text-decoration: none;
+    margin-right: rgb(124, 124, 44);
+}
+button{
+    background-color:rgb(124, 124, 44);
+}

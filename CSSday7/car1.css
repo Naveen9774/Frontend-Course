@@ -1,0 +1,15 @@
+#head{
+    color: aquamarine;
+    background-color: black;
+    text-align: center;
+    border: 2px solid rgb(238, 15, 15);
+    padding: 20px;
+    margin: 30px;
+    
+}
+p{
+    color: blue;
+}
+#head1{
+    background-color: rgb(67, 211, 211);
+}

@@ -1,0 +1,47 @@
+h1{
+    text-align: center;
+    color:red;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    text-align: justify;
+    color: white;
+}
+h2{
+    text-align: center;
+    color:red;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+div{
+    background-color: black;
+    
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+h4{
+    text-align:center;
+    color: white;
+}
+body{
+    background-color: darkgray;
+}
+#Car1{
+color: indianred;
+margin-left: 30px;
+width: 500px;
+background-color:darksalmon;
+padding: 20px;
+height: 450px;
+border-radius: 20%;
+}
+img{
+    width: 480px;
+    height: 380px;
+    padding: 20px;
+    border-radius: 25%;
+}

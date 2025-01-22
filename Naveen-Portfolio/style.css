@@ -1,0 +1,424 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family:-apple-system, scans-serif;
+}
+:root{
+    --background-color: rgb(58, 56, 56);
+    --second-bg-color: rgb(13, 14, 13);
+    --text-bg-color:rgb(250, 249, 249);
+    --main-color:#ff00c8;
+}
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+}
+body{
+    background: var(--background-color);
+    color: var(--text-bg-color);
+}
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+/*---------------------Header Section code---------------------------------*/
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: rgb(0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+/*---Header----------------its used for logo of ks naveen -----------------------*/
+.logo{
+    font-size: 3rem;
+    font-weight: 800;
+    cursor: pointer;
+    background: -webkit-linear-gradient(#ff00c8,#7700ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/*----Header------------its used for education things--------------------*/
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-bg-color);
+    margin-left: 4rem;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+
+}
+/*----Header---------------its used for education bars color changing perpose------*/
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+    border-bottom: 3px solid var(--main-color);
+}
+/*-----Header------its used for menu icons symbol of 3bars---------------*/
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    cursor: pointer;
+    display: none;
+}
+
+/*---------------Home section code---------------*/
+.Home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+.Home-content h3{
+    font-size: 3.2rem;
+    font-family: 700;
+}
+.Home-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color:var(--main-color);
+}
+.Home-content h1{
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.3;
+    background: -webkit-linear-gradient(#ff00c8,#7700ff);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.Home-img img{
+    width: 25vw;
+    border: 3px solid var(--main-color);
+    border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+   
+}
+@keyframes borderAnimation {
+    35%{
+        border-radius: 60% 40% 57% 43% / 40% 54% 46% 60%;
+    }
+    65%{
+        border-radius: 67% 33% 68% 32% / 27% 70% 30% 73%;
+    }
+    100%{
+        border-radius: 51% 49% 48% 52% / 49% 49% 51% 51% ;
+    }
+}
+.Home-content p{
+    font-size: 2rem;
+}
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 4rem;
+    color: var(--main-color);
+    margin: 4rem 2.5rem 4rem 0;
+    transition: 0.3s ease;
+}
+/*---------------shining for social media apps----------------*/
+.social-media a:hover{
+    transform: scale(1.2)translateY(-8px);
+    background-color:var(--main-color);
+    color: var(--text-bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+/*---------------its used for CV stylish perpose--------------*/
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    font-shadow:none;
+    font-size: 1.6rem;
+    color: var(--background-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    display: inline-flex;
+    justify-content: right;
+    align-items: right;
+
+}
+/*-----------------its used for CV shining perpose----------------*/
+.btn:hover{
+    box-shadow: 0 0 1.6rem var(--main-color);
+}
+/*----------------About section code---------------*/
+.About{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+.About-img img{
+    width: 25vw;
+    border: 3px solid var(--main-color);
+    border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+    
+}
+.Heading{
+    text-align: center;
+    font-size: 4.5rem;
+}
+.About-content{
+    padding: 0 4rem;
+}
+.About-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+.About-content h3{
+    font-size: 3rem;
+}
+.About-content p{
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
+}
+/*---------------------scrollbar Design----------------------------*/
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--main-color);
+    width: 50px;
+}
+/*-----------------------Education section code-----------------*/
+.Education{
+    background: var(--bg-color);
+}
+.Education-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    gap: 2.3rem;
+    margin-top: 4.2rem; 
+}
+.Row{
+    background: var(--second-bg-color);
+    font-size:1.3rem; ;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.Row img{
+    height: auto;
+    width: 100%;
+    border-radius: 35px;
+    margin-bottom: 2.4rem;
+}
+.Row:hover{
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px)scale(1.03);
+    cursor:pointer;
+}
+/*----------------------------project section code-------------------*/
+.header{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Project{
+    background: var(--bg-color);
+}
+.Project-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,auto));
+    gap: 2.3rem;
+    margin-top: 4.2rem; 
+}
+.head{
+    background: var(--second-bg-color);
+    font-size:2rem; ;
+    border-radius: 28px;
+    border: 1px solid transparent;
+    box-shadow: 0 0 5px var(--main-color);
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+.head img{
+    height: 30%;
+    width: 50%;
+    border-radius: 20px;
+    margin-bottom: 2.4rem;
+    
+    
+}
+.head:hover{
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px)scale(1.03);
+    cursor:pointer;
+}
+/*--------------------------certification---------------*/
+.sub-title{
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#certification{
+    padding: 50px 0;
+}
+.certificate-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 50px;
+    margin-top: 50px;
+}
+.work{
+    width: 110%;
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width: 100%;
+    border-radius: 30px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff00c8);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.work:hover img{
+    transform: scale(1.1);
+}
+.work:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    margin: 10px auto;
+    width: fit-content;
+    border: 1px solid#ff00c8;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:rgba(0,0,0,0.6);
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #ff00c8;
+    border: 1px solid var(--main-color);
+    transform: translateY(-5px)scale(1.03);
+    cursor:pointer;
+}
+/*---------------------------------------Internship------------------------------*/
+.Internship-content h1{
+    font-size: 5rem;
+}
+.Internship{
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+}
+.Internship-img img{
+    height: 300px;
+    width: 20vw;
+    border: 3px solid var(--main-color);
+    border-radius: 51% 49% 48% 52% / 49% 49% 51% 51%;
+    
+}
+.Internship-content ul{
+    font-size: 2.2rem;
+}
+/*--------------------------------------Contact section code----------------------------*/
+.Contact{
+    text-align: center;
+    font-size: 5rem;
+}
+.Contacthome{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background: var(--second-bg-color);
+}
+.Contacthome .contact-media1{
+    text-align: center;
+    padding-bottom: 25px;
+    color: var(--main-color);
+}
+.Contacthome .contact-media1 a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: transparent;
+    border: 0.2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 4rem;
+    color: var(--main-color);
+    margin: 4rem 2.5rem 4rem;
+    transition: 0.3s ease;
+}
+.Contacthome .contact-media1 a:hover{
+    transform: scale(1.2)translateY(-8px);
+    background: var(--main-color);
+    color: var(--text-bg-color);
+    box-shadow: 0 0 20px var(--main-color);
+}
+.Contacthome .copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-bg-color);
+}
+.Contacthome .content1-media2 a{
+    margin-top: 20px;
+    margin: 32%;
+    text-align: center;
+    font-size: 25px;
+    color: var(--text-bg-color);
+}
+
+
+

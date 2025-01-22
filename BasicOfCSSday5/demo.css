@@ -1,0 +1,19 @@
+#head2{
+    color: pink;
+    background-color: black; /*--id selector*/
+    }
+    .c1{
+        color: whitesmoke;
+        background-color: hotpink; /*--Class selector*/
+    }
+    .c2{
+        color: limegreen;
+        background-color: black; 
+        font-size: 20px; /*--Class selector*/
+    }
+    p{
+        color: red; /*--Group selector */
+    }
+*{
+    color: yellow; /*--Universal selector*/
+}

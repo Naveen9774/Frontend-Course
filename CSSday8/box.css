@@ -1,0 +1,19 @@
+.container{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #8a2be2;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid rgb(144, 223, 26);
+    background-color: blue;
+}
+.box:hover{
+    zoom: 150%;
+}
